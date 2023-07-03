@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flexy {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carr {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.shoping-card {
+  background-color: #61dafb;
+
+  cursor: pointer;
+}
+.product-item {
+  padding: 20px;
+}
+.remove-button {
+  background-color: white;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  margin-left: 100px;
+}
+.navbar {
+  background-color: #61dafb;
+}
+
+.navbar-brand {
+  color: #333;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-toggler {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-nav {
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.carousel-caption {
+  animation: fadeInCaption 1s ease-in-out;
+  color: #fff;
+}
+
+@keyframes fadeInCaption {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption h5 {
+  animation: fadeInCaptionText 1s ease-in-out;
+}
+
+@keyframes fadeInCaptionText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-caption p {
+  animation: fadeInCaptionText 1s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption {
+  animation: slideInCaption 1s ease-in-out;
+}
+
+@keyframes slideInCaption {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.carousel-inner {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Add CSS Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add Hover Effect */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Add Hover Effect to Buttons */
+.btn {
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
